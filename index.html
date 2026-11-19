@@ -441,6 +441,9 @@ body.in-shop .mbar{display:none}
 .padd:hover{color:var(--ink)}
 .padd[aria-pressed="true"]{color:var(--sage-d);text-decoration:none;font-weight:500}
 .ph-card .pi.cover img{object-fit:cover;padding:0;mix-blend-mode:normal}
+.mcontact{display:flex;gap:8px;flex-wrap:wrap;padding:14px 16px 6px;margin-top:8px;border-top:1px solid var(--line)}
+.mpanel .mcontact a{display:inline-flex;align-items:center;gap:7px;padding:9px 14px;border-radius:999px;background:var(--stone);font-size:14.5px}
+.mcontact svg{width:16px;height:16px;fill:none;stroke:var(--sage);stroke-width:1.7}
 .pbrand{font-size:12.5px;font-weight:600;color:var(--sage);letter-spacing:.01em}
 .shop-hero{padding-bottom:28px}
 .advisor{display:inline-flex;align-items:center;gap:16px;margin-top:28px;padding:12px 26px 12px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);max-width:100%}
@@ -473,14 +476,7 @@ body.in-shop .mbar{display:none}
   <div class="wrap nav">
     <div class="brand">
       <a href="#top" class="blogo" aria-label="Laura Martínez, inicio"><svg width="36" height="36" viewBox="0 0 100 100" aria-hidden="true"><g fill="#22251B"><path d="M50 46 C41 36 41 12 50 4 C59 12 59 36 50 46Z" transform="rotate(0.0 50 50)"/><path d="M50 46 C41 36 41 12 50 4 C59 12 59 36 50 46Z" transform="rotate(40.0 50 50)"/><path d="M50 46 C41 36 41 12 50 4 C59 12 59 36 50 46Z" transform="rotate(80.0 50 50)"/><path d="M50 46 C41 36 41 12 50 4 C59 12 59 36 50 46Z" transform="rotate(120.0 50 50)"/><path d="M50 46 C41 36 41 12 50 4 C59 12 59 36 50 46Z" transform="rotate(160.0 50 50)"/><path d="M50 46 C41 36 41 12 50 4 C59 12 59 36 50 46Z" transform="rotate(200.0 50 50)"/><path d="M50 46 C41 36 41 12 50 4 C59 12 59 36 50 46Z" transform="rotate(240.0 50 50)"/><path d="M50 46 C41 36 41 12 50 4 C59 12 59 36 50 46Z" transform="rotate(280.0 50 50)"/><path d="M50 46 C41 36 41 12 50 4 C59 12 59 36 50 46Z" transform="rotate(320.0 50 50)"/></g><circle cx="50" cy="50" r="12" fill="#F4E8A8" stroke="#22251B" stroke-width="3"/></svg></a>
-      <div class="wm">
-        <a href="#top" tabindex="-1" aria-hidden="true"><b>Laura Martínez</b></a>
-        <div class="wmc">
-          <a href="tel:+34623755680" aria-label="Llamar al 623 755 680"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span>623 755 680</span></a>
-          <a href="mailto:lauramartinezaesthetic@gmail.com" aria-label="Escribir a lauramartinezaesthetic@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>lauramartinezaesthetic@gmail.com</span></a>
-          <a href="https://www.instagram.com/laura.martinezaesthetic/" target="_blank" rel="noopener" aria-label="Instagram @laura.martinezaesthetic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg><span>@laura.martinezaesthetic</span></a>
-        </div>
-      </div>
+      <div class="wm"><a href="#top" tabindex="-1" aria-hidden="true"><b>Laura Martínez</b><small>AESTHETIC</small></a></div>
     </div>
     <ul class="links">
       <li><a href="#consultas">Consultas</a></li>
@@ -521,7 +517,7 @@ body.in-shop .mbar{display:none}
       <a href="#c-suplementacion" onclick="closeMenu()">Suplementación</a>
     </div>
   </details>
-  <a href="https://www.instagram.com/laura.martinezaesthetic/" target="_blank" rel="noopener">Instagram</a>
+  <div class="mcontact"><a href="tel:+34623755680"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>623 755 680</a><a href="mailto:lauramartinezaesthetic@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Email</a><a href="https://www.instagram.com/laura.martinezaesthetic/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg>Instagram</a></div>
 </nav>
 
 <main id="home">
@@ -758,6 +754,7 @@ body.in-shop .mbar{display:none}
       <span>© 2026 Laura Martínez Aesthetic · Vila Barreiro Clinic SLP · Vigo</span>
       <ul>
         <li><a href="tel:+34623755680">623 755 680</a></li>
+        <li><a href="mailto:lauramartinezaesthetic@gmail.com">lauramartinezaesthetic@gmail.com</a></li>
         <li><a href="https://www.instagram.com/laura.martinezaesthetic/" target="_blank" rel="noopener">Instagram</a></li>
         <li><a href="#aviso-legal">Aviso legal</a></li>
         <li><a href="#privacidad">Privacidad</a></li>
