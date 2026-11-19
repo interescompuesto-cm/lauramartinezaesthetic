@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lauramartinezaesthetic.com/sitemap.xml
